@@ -22,12 +22,12 @@ const HeroSection = () => {
             Hi, I&#39;m
           </h2>
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-6xl">
-            Jackson / Snowz
+            Jackson
           </h1>
           <p className="text-lg mt-4 text-neutral-800 dark:text-neutral-300 mb-6 md:text-2xl">
-            I&#39;m a{" "}
+            I&#39;m an{" "}
             <span className="font-semibold ease-in-out duration-500 underline bg-clip-text text-transparent bg-gradient-to-br from-cyan-500 to-blue-500 hover:brightness-125">
-              Self-Taught Developer{" "}
+              Aspiring Developer{" "}
             </span>
             from New Zealand.
           </p>
