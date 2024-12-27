@@ -21,13 +21,15 @@ const HeroSection = () => {
           <h2 className="text-2xl font-bold text-neutral-800 dark:text-neutral-300">
             Hi, I&#39;m
           </h2>
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-6xl">
-            Jackson
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
+            <span className="font-bold ease-in-out duration-500 underline bg-clip-text text-transparent bg-gradient-to-br from-cyan-500 to-blue-500 hover:brightness-125">
+              Snowz.{" "}
+            </span>
           </h1>
           <p className="text-lg mt-4 text-neutral-800 dark:text-neutral-300 mb-6 md:text-2xl">
-            I&#39;m an{" "}
+            A passionate{" "}
             <span className="font-semibold ease-in-out duration-500 underline bg-clip-text text-transparent bg-gradient-to-br from-cyan-500 to-blue-500 hover:brightness-125">
-              Aspiring Developer{" "}
+              Developer{" "}
             </span>
             from New Zealand.
           </p>
@@ -55,19 +57,6 @@ const HeroSection = () => {
                 width={35}
                 height={35}
                 alt="Discord"
-                className="hover:-translate-y-1 transition-transform cursor-pointer"
-              />
-            </a>
-            <a
-              href="https://osu.ppy.sh/users/15051562"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Image
-                src="/logos/osu.svg"
-                width={35}
-                height={35}
-                alt="osu!"
                 className="hover:-translate-y-1 transition-transform cursor-pointer"
               />
             </a>

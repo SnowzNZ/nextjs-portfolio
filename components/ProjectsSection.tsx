@@ -11,7 +11,7 @@ interface Project {
   name: string;
   description: string;
   image: string;
-  github: string;
+  github?: string;
   link: string;
 }
 
@@ -19,10 +19,24 @@ const projects: Project[] = [
   {
     name: "SnowReports",
     description:
-      "SnowReports is my first Spigot plugin and introduction to Java development. It is a report plugin with essential features such as Discord integration, report cooldowns, auto-completion for commands, in-game report notifications, a report list GUI, and more. All reports are stored in a SQLite database, which was challenging as it was my first time doing so. Current Downloads: {downloads}",
-    image: "/placeholder.png",
+      "SnowReports is my first Spigot plugin and introduction to Java development. It is a report plugin with essential features such as Discord integration, report cooldowns, auto-completion for commands, in-game report notifications, a report list GUI, and more. Everything is stored in either a SQLite or MySQL database. Total Downloads: {downloads}",
+    image: "/snowreports.png",
     github: "https://github.com/SnowzNZ/SnowReports",
     link: "https://modrinth.com/plugin/snowreports",
+  },
+  {
+    name: "Clans",
+    description:
+      "Clans is a private custom made plugin for the Oceanias server, used by around 100 players daily, with peaks of 300 players online at once. Featuring clan chat, bases, wars, vaults, and more, it offers a unique, immersive experience for players to compete and collaborate within their clans.",
+    image: "/clans1.png",
+    link: "https://discord.oceanias.net/",
+  },
+  {
+    name: "AntiFreehit",
+    description:
+      "AntiFreehit is a private custom made plugin for the Oceanias server. It prevents players from interupting fights in Sword FFA with options to hide all other players, disable AntiFreehit to allow them to PvP as if it were a normal FFA, and more.",
+    image: "/antifreehit.png",
+    link: "https://discord.oceanias.net/",
   },
 ];
 
@@ -92,18 +106,22 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                      <Link href={project.link} target="_blank">
-                        <FiExternalLink
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
+                      {project.github && (
+                        <Link href={project.github} target="_blank">
+                          <BsGithub
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          />
+                        </Link>
+                      )}
+                      {project.link && (
+                        <Link href={project.link} target="_blank">
+                          <FiExternalLink
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>

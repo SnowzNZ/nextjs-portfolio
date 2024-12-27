@@ -3,6 +3,11 @@ import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Snowz",
+};
 
 export default function RootLayout({
   children,
