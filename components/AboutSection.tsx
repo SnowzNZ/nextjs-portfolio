@@ -24,12 +24,12 @@ const AboutSection = () => {
           {/* About Text */}
           <div className="md:w-1/2">
             <p>
-              I'm Snowz, a Java developer for Oceanias.net with a passion for
-              cars, skiing, mountain biking, and all things tech. While I
+              I&apos;m Snowz, a Java developer for Oceanias.net with a passion
+              for cars, skiing, mountain biking, and all things tech. While I
               started as a Python enthusiast, discovering Java—and working with
               the Bukkit API to build plugins and solutions—has been a
-              game-changer. These days, I' m all about crafting solutions that
-              power Oceanias.net and fuel my love for development.
+              game-changer. These days, I&apos;m all about crafting solutions
+              that power Oceanias.net and fuel my love for development.
             </p>
           </div>
 

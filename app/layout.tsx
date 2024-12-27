@@ -1,8 +1,7 @@
-"use client";
 import "@/app/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
